@@ -1,3 +1,8 @@
+
+GotoNode = Core.GotoNode;
+Associative = AbstractDict;
+
+
 maxlabel(code) = maximum(l isa LabelNode ? l.label : -1 for l in code)
 
 isgoto(::GotoNode) = true
